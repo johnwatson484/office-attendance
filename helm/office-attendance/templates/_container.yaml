@@ -9,4 +9,6 @@ ports:
 volumeMounts:
   - mountPath: /home/node/build
     name: build-dir
+  - mountPath: /tmp
+    name: tmp-dir
 {{- end -}}
