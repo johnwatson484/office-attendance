@@ -11,7 +11,6 @@ ENV PATH=$PATH:/home/node/.npm-global/bin
 
 USER node
 WORKDIR /home/node
-RUN mkdir -p /home/node/build
 COPY --chown=node:node package*.json ./
 RUN npm install
 COPY --chown=node:node . .
@@ -21,4 +20,5 @@ CMD [ "npm", "run", "start" ]
 FROM development AS production
 ENV NODE_ENV production
 RUN npm ci
+RUN mkdir -p /home/node/build
 CMD [ "npm", "run", "build" ]
