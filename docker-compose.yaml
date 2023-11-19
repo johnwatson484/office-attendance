@@ -1,0 +1,7 @@
+services:
+  office-attendance:
+    build: .
+    image: office-attendance
+    container_name: office-attendance
+    environment:
+      ADDRESS: '0.0.0.0'

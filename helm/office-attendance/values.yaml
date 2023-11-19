@@ -1,0 +1,16 @@
+environment: production
+name: office-attendance
+image: office-attendance
+
+container:
+  requestMemory: 80Mi
+  requestCpu: 80m
+  limitMemory: 80Mi
+  limitCpu: 80m
+  port: 3000
+
+deployment: {}
+
+ingress:
+  host: office-attendance.lynxmagnus.com
+

@@ -1,0 +1,3 @@
+{{- include "helm-library.ingress" (list . "dream-league-web.ingress") -}}
+{{- define "dream-league-web.ingress" -}}
+{{- end -}}
