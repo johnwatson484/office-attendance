@@ -7,6 +7,6 @@ ports:
   name: http
   protocol: TCP
 volumeMounts:
-  - mountPath: /home/node/app/build
+  - mountPath: /home/node/build
     name: build-dir
 {{- end -}}
