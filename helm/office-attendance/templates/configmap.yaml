@@ -3,4 +3,5 @@
 data:
   NODE_ENV: {{ quote .Values.environment }}
   PORT: {{ quote .Values.container.port }}
+  ADDRESS: '0.0.0.0'
 {{- end -}}
