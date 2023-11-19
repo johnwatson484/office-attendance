@@ -8,6 +8,8 @@ ports:
   protocol: TCP
 volumeMounts:
   - mountPath: /home/node/build
+    name: npm-cache-dir
+  - mountPath: /home/node/node_modules/.cache
     name: build-dir
   - mountPath: /tmp
     name: tmp-dir
