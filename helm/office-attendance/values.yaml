@@ -5,7 +5,7 @@ image: office-attendance
 container:
   requestMemory: 120Mi
   requestCpu: 120m
-  limitMemory: 200Mi
+  limitMemory: 1000Mi
   limitCpu: 200m
   port: 3000
 
