@@ -20,5 +20,5 @@ CMD [ "npm", "run", "start" ]
 FROM development AS production
 ENV NODE_ENV production
 RUN npm ci
-RUN mkdir -p /home/node/build
-CMD [ "npm", "run", "build" ]
+RUN npm run build
+CMD [ "npx", "serve", "-s", "build", "-l", "3000" ]
