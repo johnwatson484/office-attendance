@@ -20,4 +20,4 @@ CMD [ "npm", "run", "start" ]
 FROM development AS production
 ENV NODE_ENV production
 RUN npm ci
-CMD [ "npm", "run", "start" ]
+CMD [ "npm", "run", "build" ]
