@@ -20,10 +20,7 @@ CMD [ "npm", "run", "start" ]
 FROM development AS production
 ENV NODE_ENV production
 
-# Set global npm dependencies to be stored under the node user directory
-ENV NPM_CONFIG_PREFIX=/home/node/.npm-global
-ENV PATH=$PATH:/home/node/.npm-global/bin
-
 RUN npm ci
 RUN npm run build
-CMD [ "npx", "serve", "-s", "build", "-l", "3000" ]
+RUN npm install -g serve
+CMD [ "npm", "serve", "-s", "build", "-l", "3000" ]
