@@ -1,3 +1,5 @@
+[![Build Status](https://dev.azure.com/johnwatson484/John%20D%20Watson/_apis/build/status%2FOffice%20Attendance?branchName=main)](https://dev.azure.com/johnwatson484/John%20D%20Watson/_build/latest?definitionId=70&branchName=main)
+
 # Office attendance
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
