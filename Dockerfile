@@ -23,4 +23,4 @@ ENV NODE_ENV production
 RUN npm ci
 RUN npm run build
 RUN npm install -g serve
-CMD [ "serve", "build", "-l", "3000" ]
+CMD [ "serve", "build", "-l", "3000", "-s", "-d" ]
