@@ -6,4 +6,7 @@ ports:
 - containerPort: {{ .Values.container.port }}
   name: http
   protocol: TCP
+volumeMounts:
+  - mountPath: /home/node/app/build
+    name: build-dir
 {{- end -}}

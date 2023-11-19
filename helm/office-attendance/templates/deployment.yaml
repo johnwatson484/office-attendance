@@ -3,6 +3,9 @@
 spec:
   template:
     spec:
+      volumes:
+      - name: build-dir
+        emptyDir: {}
       containers:
       - {{ include "helm-library.container" (list . "dream-league-web.container") }}
 {{- end -}}
