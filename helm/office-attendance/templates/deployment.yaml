@@ -4,10 +4,6 @@ spec:
   template:
     spec:
       volumes:
-      - name: build-dir
-        emptyDir: {}
-      - name: npm-cache-dir
-        emptyDir: {}
       - name: tmp-dir
         emptyDir: {}
       containers:
