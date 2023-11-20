@@ -7,7 +7,7 @@ container:
   requestCpu: 120m
   limitMemory: 1000Mi
   limitCpu: 500m
-  port: 3000
+  port: 8080
 
 deployment: {}
 

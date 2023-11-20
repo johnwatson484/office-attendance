@@ -16,11 +16,13 @@ RUN npm install
 COPY --chown=node:node . .
 CMD [ "npm", "run", "start" ]
 
-# Production
-FROM development AS production
+# Production-build
+FROM development AS production-build
 ENV NODE_ENV production
 
 RUN npm ci
 RUN npm run build
-RUN npm install -g serve
-CMD [ "serve", "build", "-l", "3000", "-s", "-d" ]
+
+# Production
+FROM nginxinc/nginx-unprivileged:1-alpine AS production
+COPY --from=production-build /home/node/build /usr/share/nginx/html
