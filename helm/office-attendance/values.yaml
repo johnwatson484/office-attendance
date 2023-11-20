@@ -5,8 +5,8 @@ image: office-attendance
 container:
   requestMemory: 120Mi
   requestCpu: 120m
-  limitMemory: 1000Mi
-  limitCpu: 500m
+  limitMemory: 120Mi
+  limitCpu: 120m
   port: 8080
 
 deployment: {}
